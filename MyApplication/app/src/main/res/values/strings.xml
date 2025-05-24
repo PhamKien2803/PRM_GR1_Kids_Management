@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Personal Management</string>
+    <string name="login_title">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forgot your password?</string>
+    <string name="login_button">Login</string>
+    <string name="no_account">Don\'t have an account? Sign up"</string>
+    <string name="sign_up_button">Sign up</string>
+    <string name="login_contentDescription">Press to login in to your account</string>
+    <string name="welcome_message">Xin chào bạn đến với hệ thống quản lý cá nhân</string>
+    <string name="logout_button">Logout</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_light_primary">#FF6200EE</color> <color name="my_light_secondary">#FF03DAC5</color> <color name="my_light_secondary_variant">#FF018786</color> <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="textColorPrimary">#0D47A1</color>
+    <color name="textColorHint">#666666</color>
+    <color name="buttonColor">#2196F3</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="textBlack">#000000</color>
+</resources>
