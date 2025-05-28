@@ -3,26 +3,30 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
-    private Button btnLogout;
+
+    Button btnLogout;
+    Button btnManageUsers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
-        TextView tvWelcome = findViewById(R.id.tvWelcome);
         btnLogout = findViewById(R.id.btnLogout);
+        btnManageUsers = findViewById(R.id.btnManage_user);
 
-        btnLogout.setOnClickListener(view -> {
+        btnLogout.setOnClickListener(v -> {
             Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
         });
+
+        btnManageUsers.setOnClickListener(v -> {
+            Intent intent = new Intent(WelcomeActivity.this, UserManagerActivity.class);
+            startActivity(intent);
+        });
     }
 }
+

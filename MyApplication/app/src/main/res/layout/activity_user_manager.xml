@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userManagerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_title"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/edtUserId"
+                style="@style/HintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_user_id_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/HintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_hint"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/HintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAddUser"
+                style="@style/LoginButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_user_id_hint"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnUpdateUser"
+                style="@style/LoginButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_user"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnDeleteUser" style="@style/LoginButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_user"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnShowAll"
+                style="@style/LoginButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_all_users"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtUserList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_list_placeholder"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

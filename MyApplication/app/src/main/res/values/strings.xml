@@ -10,4 +10,12 @@
     <string name="login_contentDescription">Press to login in to your account</string>
     <string name="welcome_message">Xin chào bạn đến với hệ thống quản lý cá nhân</string>
     <string name="logout_button">Logout</string>
+    <string name="Manage_user">Quản lý người dùng</string>
+    <!-- User CRUD -->
+    <string name="add_user_id_hint">ID người dùng (để sửa hoặc xoá)</string>
+    <string name="update_user">Cập nhật người dùng</string>
+    <string name="delete_user">Xoá người dùng</string>
+    <string name="list_all_users">Hiển thị tất cả</string>
+    <string name="user_list_placeholder">Danh sách người dùng sẽ hiển thị ở đây</string>
+    <string name="user_title">Quản lý người dùng</string>
 </resources>
